@@ -90,7 +90,6 @@ def createTermFrequencyMatrix(indexTerms):
     for i in termFrequencyMatrix:
         #Iterate over index terms and count the number of times each term appears in the document
         for j in indexTerms:
-            # print(i, j)
             termFrequencyMatrix[i][j] = str(list(allDocSets[i]).count(j))
     return termFrequencyMatrix
 
